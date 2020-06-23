@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col-3"> </div>
+  <div class="col-6">
+    <p class="text-center project-title">List Of Departments</p>
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th>Sl#</th>
+          <th>Department Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let department of departmentList | paginate: { itemsPerPage: 5, currentPage: p }; index as i">
+          <td>{{department.departmentId}}</td>
+          <td>{{department.departmentName}}</td>
+        </tr>
+      </tbody>
+    </table>
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+    <div class="col-3"> </div>
+  </div>
+</div>

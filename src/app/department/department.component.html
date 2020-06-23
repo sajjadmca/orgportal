@@ -1,0 +1,49 @@
+<p>department works!</p>
+
+<div class="row">
+  <div class="col-12">
+    <p class="text-center project-title"> List Of Project Head & Project</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-3"></div>
+  <div class="col-2">
+    <span> <strong> Department Name </strong> </span>
+  </div>
+  <div class="col-3">
+    <select class="browser-default custom-select" (change)="filterDepartment($event.target.value)">
+      <option value="0">--All--</option>
+      <option *ngFor="let department of filterDepartmentData" value={{department.departmentName}}>
+        {{department.departmentName}}
+      </option>
+    </select>
+  </div>
+  <div class="col-3"></div>
+</div>
+
+<div class="row mt-3">
+  <div class="col-3"></div>
+  <div class="col-6">
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th>Project Head Name</th>
+          <th>Project Name</th>
+        </tr>
+      </thead>
+      <ng-container *ngFor="let department of departmentData">
+        <ng-container *ngFor="let projecthd of department.projectHead ">
+          <tbody>
+            <tr *ngFor="let proj of projecthd.project">
+
+              <td>{{ projecthd.projectHeadName }}</td>
+              <td>{{ proj.projectName }}</td>
+            </tr>
+          </tbody>
+        </ng-container>
+      </ng-container>
+    </table>
+  </div>
+  <div class="col-3"></div>
+</div>

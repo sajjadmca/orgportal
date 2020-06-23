@@ -1,0 +1,30 @@
+<div class="row mt-2">
+  <div class="col-6">
+    <button (click)="logout()" class="btn btn-danger">Logout</button>
+  </div>
+</div>
+<div class="row">
+  <div class="col-3"> </div>
+  <div class="col-6">
+    <p class="text-center project-title">List Of Employee</p>
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th>Employ Id</th>
+          <th>Employ Name</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let employ of employeeData | paginate: { itemsPerPage: 5, currentPage: p };">
+          <td>{{employ.id}}</td>
+          <td>{{employ.employeeName}}</td>
+          <td> <button (click)="employeeDetails(employ.id)" type="button"
+              class="btn btn-info btn-rounded btn-sm my-0">Detail</button> </td>
+        </tr>
+      </tbody>
+    </table>
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+    <div class="col-3"> </div>
+  </div>
+</div>

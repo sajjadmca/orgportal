@@ -1,0 +1,40 @@
+<div class="row">
+  <div class="col-12">
+    <h1 class="text-center">
+      Welcome To <span class="pip_header">{{ title }} ! </span>
+    </h1>
+  </div>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" routerLink="/home"><img src="assets/image/capg-logo.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/home">Home </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/department">Department</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/project">Project</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/head">Head</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/about">About Us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div>
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+  <ngx-spinner></ngx-spinner>

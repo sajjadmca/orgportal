@@ -1,0 +1,55 @@
+<div class="row mt-2">
+    <div class="col-6">
+        <button (click)="backToEmploy()" class="btn btn-secondary btn-arrow-right">
+            Back </button>
+        <button (click)="showProjectForm()" class="btn btn-primary ml-2"> Assign Project</button>
+    </div>
+</div>
+<div [hidden]="projectListHide" class="row mt-2">
+    <div class="col-3"> </div>
+    <div class="col-6">
+        <p class="text-center project-title">List Of Project </p>
+        <table class="table table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Project Name</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let project of projectList | paginate: { itemsPerPage: 5, currentPage: p }">
+                    <td>{{project.projectName}}</td>
+                    <td><button (click)="deleteProject(project.id)" class="btn btn-danger">Delete</button>
+                </tr>
+            </tbody>
+        </table>
+        <pagination-controls (pageChange)="p = $event"></pagination-controls>
+    </div>
+    <div class="col-3"> </div>
+</div>
+
+<div [hidden]="projectFormHide" class="row mt-2">
+    <div class="col-3"> </div>
+    <div class="col-6 border border-dark">
+        <p class="text-center project-title">Assign Project For Employ Id :<span style="color:red;">{{empId}} </span></p>
+        <div class="form-group">
+            <label for="employeeId">Select Project</label>
+            <select class="browser-default custom-select" class="form-control"
+                [(ngModel)]="organizationService.currentProject.projectName">
+                <option *ngFor="let capgProject of capgProjectData" value={{capgProject.CapgprojectName}}>
+                    {{capgProject.CapgprojectName}}
+                </option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="employeeId">Employ Id</label>
+            <input type="number" class="form-control" [(ngModel)]="organizationService.currentProject.employeeId"
+                id="employeeId" name="employeeId">
+        </div>
+        <div class="form-group">
+            <button class="btn btn-success" (click)="createProject(organizationService.currentProject)">Submit</button>
+            <button class="btn btn-danger ml-2" (click)="hideProjectForm()">Cancel</button>
+        </div>
+    </div>
+    <div class="col-3"> </div>
+</div>

@@ -1,0 +1,330 @@
+{
+  "departmentList": [
+    {
+      "departmentId": "1",
+      "departmentName": "IT",
+      "projectHead": [
+        {
+          "projectHeadId": "IT1",
+          "projectHeadName": "Amit Kumar",
+          "project": [
+            {
+              "projectName": "Air buss"
+            },
+            {
+              "projectName": "Air India"
+            },
+            {
+              "projectName": "Amirates Airlines"
+            }
+          ],
+          "employee": [
+            {
+              "employeeId": "1",
+              "employeeName": "Bhupesh",
+              "projectAssign": [
+                {
+                  "projectId": "1",
+                  "projectName": "Air buss"
+                },
+                {
+                  "projectId": "2",
+                  "projectName": "Airlines"
+                }
+              ]
+            },
+            {
+              "employeeId": "2",
+              "employeeName": "Suresh",
+              "projectAssign": [
+                {
+                  "projectId": "3",
+                  "projectName": "Dell"
+                },
+                {
+                  "projectId": "4",
+                  "projectName": "Skyee"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "projectHeadId": "IT2",
+          "projectHeadName": "Sarvan Pandey",
+          "project": [
+            {
+              "projectName": "Plutonium"
+            },
+            {
+              "projectName": "Metro"
+            },
+            {
+              "projectName": "Oil Corporation"
+            }
+          ],
+          "employee": [
+            {
+              "employeeId": "1",
+              "employeeName": "Rahul",
+              "projectAssign": [
+                {
+                  "projectId": "1",
+                  "projectName": "Plutonium"
+                },
+                {
+                  "projectId": "2",
+                  "projectName": "Metro"
+                }
+              ]
+            },
+            {
+              "employeeId": "2",
+              "employeeName": "Mishra",
+              "projectAssign": [
+                {
+                  "projectId": "3",
+                  "projectName": "Oil Corporation"
+                },
+                {
+                  "projectId": "4",
+                  "projectName": "Plutonium"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "projectHeadId": "IT3",
+          "projectHeadName": "Ashok Kumar",
+          "project": [
+            {
+              "projectName": "Apollo"
+            },
+            {
+              "projectName": "Phoenix"
+            },
+            {
+              "projectName": "Jio telecom"
+            }
+          ]
+        },
+        {
+          "projectHeadId": "IT4",
+          "projectHeadName": "Vikash Miahra",
+          "project": [
+            {
+              "projectName": "Air buss"
+            },
+            {
+              "projectName": "Air India"
+            },
+            {
+              "projectName": "Amirates Airlines"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "departmentId": "2",
+      "departmentName": "Help Desk",
+      "projectHead": [
+        {
+          "projectHeadId": "2",
+          "projectHeadName": "Mohit",
+          "project": [
+            {
+              "projectName": "Help Desk_1"
+            },
+            {
+              "projectName": "Help Desk_2"
+            },
+            {
+              "projectName": "Help Desk_3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "departmentId": "3",
+      "departmentName": "Research and Development"
+    },
+    {
+      "departmentId": "4",
+      "departmentName": "Sales and Marketing"
+    },
+    {
+      "departmentId": "5",
+      "departmentName": "Accounting and Finance"
+    },
+    {
+      "departmentId": "6",
+      "departmentName": "Infrastructures"
+    },
+    {
+      "departmentId": "7",
+      "departmentName": "Learning and Development"
+    },
+    {
+      "departmentId": "8",
+      "departmentName": "Admin"
+    }
+  ],
+  "projectAssign": [
+    {
+      "id": "1",
+      "projectName": "Air buss",
+      "employeeId": "2"
+    },
+    {
+      "id": "3",
+      "projectName": "Dell",
+      "employeeId": "3"
+    },
+    {
+      "id": "6",
+      "projectName": "Metro",
+      "employeeId": "4"
+    },
+    {
+      "id": "9",
+      "projectName": "AirTell",
+      "employeeId": "5"
+    },
+    {
+      "id": "10",
+      "projectName": "DenMark",
+      "employeeId": "6"
+    },
+    {
+      "id": "10",
+      "projectName": "AirTell",
+      "employeeId": "7"
+    },
+    {
+      "id": "qPozVAG",
+      "projectName": "BSNL",
+      "employeeId": 1
+    },
+    {
+      "id": "7OjcbFq",
+      "projectName": "Dell",
+      "employeeId": 4
+    },
+    {
+      "id": "SL2IsaQ",
+      "projectName": "AirTell",
+      "employeeId": 1
+    },
+    {
+      "id": "18Ql0c3",
+      "projectName": "Dell",
+      "employeeId": 1
+    },
+    {
+      "id": "ln-YNWK",
+      "projectName": "Skyee",
+      "employeeId": 4
+    },
+    {
+      "id": "mNhsyxK",
+      "projectName": "Air India",
+      "employeeId": 3
+    },
+    {
+      "id": "OWB98_9",
+      "projectName": "Air buss",
+      "employeeId": 7
+    },
+    {
+      "id": "vnEfZKd",
+      "projectName": "Skyee",
+      "employeeId": 6
+    },
+    {
+      "id": "_O63uCh",
+      "projectName": "Air buss",
+      "employeeId": 7
+    },
+    {
+      "id": "IbFOJUc",
+      "projectName": "Air buss",
+      "employeeId": 8
+    },
+    {
+      "id": "PqIead-",
+      "projectName": "Skyee",
+      "employeeId": 2
+    },
+    {
+      "id": "7A2btID",
+      "projectName": "Plutonium",
+      "employeeId": 5
+    }
+  ],
+  "employee": [
+    {
+      "id": "1",
+      "employeeName": "Rahul"
+    },
+    {
+      "id": "2",
+      "employeeName": "Bhupesh"
+    },
+    {
+      "id": "3",
+      "employeeName": "Suresh"
+    },
+    {
+      "id": "4",
+      "employeeName": "Mishra"
+    },
+    {
+      "id": "5",
+      "employeeName": "Arvind Kumar"
+    },
+    {
+      "id": "6",
+      "employeeName": "Vishwash"
+    },
+    {
+      "id": "7",
+      "employeeName": "Raj Kumar"
+    },
+    {
+      "id": "8",
+      "employeeName": "Mohini Kumari"
+    }
+  ],
+  "capgProject": [
+    {
+      "CapgprojectName": "Air buss"
+    },
+    {
+      "CapgprojectName": "Air India"
+    },
+    {
+      "CapgprojectName": "Amirates Airlines"
+    },
+    {
+      "CapgprojectName": "Dell"
+    },
+    {
+      "CapgprojectName": "Skyee"
+    },
+    {
+      "CapgprojectName": "Oil Corporation"
+    },
+    {
+      "CapgprojectName": "Plutonium"
+    },
+    {
+      "CapgprojectName": "AirTell"
+    },
+    {
+      "CapgprojectName": "BSNL"
+    }
+  ]
+}
